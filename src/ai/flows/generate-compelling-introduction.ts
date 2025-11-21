@@ -14,7 +14,7 @@ const GenerateCompellingIntroductionInputSchema = z.object({});
 export type GenerateCompellingIntroductionInput = z.infer<typeof GenerateCompellingIntroductionInputSchema>;
 
 const GenerateCompellingIntroductionOutputSchema = z.object({
-  introduction: z.string().describe('A compelling introduction for the company profile.'),
+  introduction: z.string().describe('Perkenalan yang menarik untuk profil perusahaan.'),
 });
 export type GenerateCompellingIntroductionOutput = z.infer<typeof GenerateCompellingIntroductionOutputSchema>;
 
@@ -28,13 +28,13 @@ const prompt = ai.definePrompt({
   name: 'generateCompellingIntroductionPrompt',
   input: {schema: GenerateCompellingIntroductionInputSchema},
   output: {schema: GenerateCompellingIntroductionOutputSchema},
-  prompt: `You are tasked with creating a compelling and engaging introduction for an investment company named Vanguard Vista.
+  prompt: `Anda ditugaskan untuk membuat perkenalan yang menarik dan memikat untuk sebuah perusahaan investasi bernama Vanguard Vista.
 
-  Your goal is to immediately capture the attention of potential investors by highlighting the company's mission and values.
+  Tujuan Anda adalah untuk segera menarik perhatian investor potensial dengan menyoroti misi dan nilai-nilai perusahaan.
 
-  The introduction should be concise, impactful, and instill trust and confidence in Vanguard Vista's capabilities.
+  Perkenalan harus ringkas, berdampak, dan menanamkan kepercayaan pada kemampuan Vanguard Vista.
 
-  Generate a short introduction that effectively communicates the company's commitment to strategic investment and client success.`,
+  Hasilkan perkenalan singkat dalam Bahasa Indonesia yang secara efektif mengkomunikasikan komitmen perusahaan terhadap investasi strategis dan kesuksesan klien.`,
 });
 
 const generateCompellingIntroductionFlow = ai.defineFlow(

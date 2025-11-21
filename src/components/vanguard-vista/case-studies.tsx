@@ -8,20 +8,20 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const caseStudies = [
   {
-    title: 'Tech Startup Unicorn',
-    description: 'Early-stage investment in a disruptive SaaS platform, resulting in a 50x return on investment upon its IPO.',
+    title: 'Unicorn Startup Teknologi',
+    description: 'Investasi tahap awal pada platform SaaS yang disruptif, menghasilkan pengembalian investasi 50x saat IPO.',
     roi: '50x ROI',
     image: PlaceHolderImages.find(p => p.id === 'case-study-1')!,
   },
   {
-    title: 'Real Estate Revitalization',
-    description: 'Strategic acquisition and development of undervalued urban properties, yielding a 300% increase in portfolio value.',
-    roi: '300% Value Increase',
+    title: 'Revitalisasi Real Estat',
+    description: 'Akuisisi strategis dan pengembangan properti perkotaan yang dinilai terlalu rendah, menghasilkan peningkatan nilai portofolio 300%.',
+    roi: 'Peningkatan Nilai 300%',
     image: PlaceHolderImages.find(p => p.id === 'case-study-2')!,
   },
   {
-    title: 'Renewable Energy Project',
-    description: 'Financed a large-scale solar farm, contributing to clean energy goals and delivering stable, long-term returns.',
+    title: 'Proyek Energi Terbarukan',
+    description: 'Membiayai pembangkit listrik tenaga surya skala besar, berkontribusi pada tujuan energi bersih dan memberikan pengembalian jangka panjang yang stabil.',
     roi: '15% IRR',
     image: PlaceHolderImages.find(p => p.id === 'case-study-3')!,
   }
@@ -32,9 +32,9 @@ export function CaseStudies() {
     <section id="case-studies" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Success Stories</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Kisah Sukses</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            Transforming potential into performance.
+            Mengubah potensi menjadi kinerja.
           </p>
         </div>
         <Carousel opts={{ loop: true }} className="w-full max-w-6xl mx-auto">

@@ -15,7 +15,7 @@ const chartData = [
 
 const chartConfig = {
   performance: {
-    label: "Performance",
+    label: "Kinerja",
     color: "hsl(var(--accent))",
   },
 };
@@ -25,15 +25,15 @@ export function PerformanceCharts() {
     <section id="performance" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Proven Performance</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Kinerja yang Terbukti</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            Our track record speaks for itself. Consistent growth through strategic investments.
+            Rekam jejak kami berbicara sendiri. Pertumbuhan konsisten melalui investasi strategis.
           </p>
         </div>
         <Card className="bg-background/50">
           <CardHeader>
-            <CardTitle>Annual Portfolio Performance</CardTitle>
-            <CardDescription>Year-over-year growth (in %)</CardDescription>
+            <CardTitle>Kinerja Portofolio Tahunan</CardTitle>
+            <CardDescription>Pertumbuhan dari tahun ke tahun (dalam %)</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig} className="h-[400px] w-full">

@@ -8,7 +8,7 @@ export function Hero({ introduction }: { introduction: string }) {
           Vanguard Vista
         </h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-foreground/80">
-          Strategic Investment for a Brighter Future
+          Investasi Strategis untuk Masa Depan yang Lebih Cerah
         </p>
         <div className="mt-8 max-w-3xl mx-auto bg-background/50 p-6 rounded-xl shadow-inner">
            <p className="text-lg text-foreground">
@@ -17,7 +17,7 @@ export function Hero({ introduction }: { introduction: string }) {
         </div>
         <div className="mt-8">
           <Button size="lg" asChild>
-            <a href="#contact">Get in Touch</a>
+            <a href="#contact">Hubungi Kami</a>
           </Button>
         </div>
       </div>

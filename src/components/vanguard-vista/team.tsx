@@ -7,8 +7,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 const teamMembers = [
   {
     name: 'Johnathan Doe',
-    role: 'Founder & CEO',
-    bio: 'With over 20 years of experience in financial markets, Johnathan leads Vanguard Vista with a vision for sustainable growth.',
+    role: 'Pendiri & CEO',
+    bio: 'Dengan lebih dari 20 tahun pengalaman di pasar keuangan, Johnathan memimpin Vanguard Vista dengan visi untuk pertumbuhan berkelanjutan.',
     image: PlaceHolderImages.find(p => p.id === 'team-member-1')!,
     social: {
       linkedin: '#',
@@ -18,7 +18,7 @@ const teamMembers = [
   {
     name: 'Jane Smith',
     role: 'Chief Investment Officer',
-    bio: 'Jane specializes in quantitative analysis and risk management, ensuring our portfolios are robust and resilient.',
+    bio: 'Jane berspesialisasi dalam analisis kuantitatif dan manajemen risiko, memastikan portofolio kami kuat dan tangguh.',
     image: PlaceHolderImages.find(p => p.id === 'team-member-2')!,
     social: {
       linkedin: '#',
@@ -27,8 +27,8 @@ const teamMembers = [
   },
   {
     name: 'Alex Johnson',
-    role: 'Head of Venture Capital',
-    bio: 'Alex has a keen eye for disruptive technologies and has led multiple successful early-stage investments.',
+    role: 'Kepala Modal Ventura',
+    bio: 'Alex memiliki mata yang tajam untuk teknologi disruptif dan telah memimpin beberapa investasi tahap awal yang sukses.',
     image: PlaceHolderImages.find(p => p.id === 'team-member-3')!,
     social: {
       linkedin: '#',
@@ -42,9 +42,9 @@ export function Team() {
     <section id="team" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Our Expert Team</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Tim Ahli Kami</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            Meet the minds behind our success.
+            Kenali para pemikir di balik kesuksesan kami.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -62,10 +62,10 @@ export function Team() {
                 <p className="text-muted-foreground mb-4">{member.bio}</p>
                 <div className="flex justify-center gap-2">
                   <Button variant="ghost" size="icon" asChild>
-                    <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} on LinkedIn`}><Linkedin className="h-5 w-5" /></a>
+                    <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} di LinkedIn`}><Linkedin className="h-5 w-5" /></a>
                   </Button>
                   <Button variant="ghost" size="icon" asChild>
-                    <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} on Twitter`}><Twitter className="h-5 w-5" /></a>
+                    <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} di Twitter`}><Twitter className="h-5 w-5" /></a>
                   </Button>
                 </div>
               </CardContent>

@@ -11,7 +11,7 @@ export function Footer() {
             <span className="font-headline text-xl font-bold text-primary">Vanguard Vista</span>
           </div>
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            &copy; {new Date().getFullYear()} Vanguard Vista. All rights reserved.
+            &copy; {new Date().getFullYear()} Vanguard Vista. Semua hak dilindungi.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary">

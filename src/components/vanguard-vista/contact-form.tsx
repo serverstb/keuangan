@@ -12,9 +12,9 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from 'react';
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email address.' }),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
+  name: z.string().min(2, { message: 'Nama harus terdiri dari minimal 2 karakter.' }),
+  email: z.string().email({ message: 'Silakan masukkan alamat email yang valid.' }),
+  message: z.string().min(10, { message: 'Pesan harus terdiri dari minimal 10 karakter.' }),
 });
 
 type FormData = z.infer<typeof formSchema>;
@@ -39,8 +39,8 @@ export function ContactForm() {
     setIsSubmitting(false);
     form.reset();
     toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll be in touch soon.",
+      title: "Pesan Terkirim!",
+      description: "Terima kasih telah menghubungi kami. Kami akan segera menghubungi Anda.",
       variant: 'default',
       className: 'bg-accent text-accent-foreground',
     });
@@ -49,8 +49,8 @@ export function ContactForm() {
   return (
     <Card className="bg-background">
       <CardHeader>
-        <CardTitle className="font-headline">Send us a Message</CardTitle>
-        <CardDescription>We're looking forward to hearing from you.</CardDescription>
+        <CardTitle className="font-headline">Kirimkan Pesan kepada Kami</CardTitle>
+        <CardDescription>Kami menantikan kabar dari Anda.</CardDescription>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -60,9 +60,9 @@ export function ContactForm() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
+                  <FormLabel>Nama Lengkap</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder="Budi Santoso" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -73,9 +73,9 @@ export function ContactForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email Address</FormLabel>
+                  <FormLabel>Alamat Email</FormLabel>
                   <FormControl>
-                    <Input type="email" placeholder="john.doe@example.com" {...field} />
+                    <Input type="email" placeholder="budi.santoso@example.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -86,16 +86,16 @@ export function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Your Message</FormLabel>
+                  <FormLabel>Pesan Anda</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="How can we help you?" {...field} rows={5} />
+                    <Textarea placeholder="Bagaimana kami bisa membantu Anda?" {...field} rows={5} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
             <Button type="submit" className="w-full" disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? 'Mengirim...' : 'Kirim Pesan'}
             </Button>
           </form>
         </Form>

@@ -7,11 +7,12 @@ import { Button } from '@/components/ui/button';
 import { Menu, Mountain } from 'lucide-react';
 
 const navLinks = [
-  { href: '#strategies', label: 'Strategies' },
-  { href: '#performance', label: 'Performance' },
-  { href: '#team', label: 'Team' },
-  { href: '#case-studies', label: 'Case Studies' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#strategies', label: 'Strategi' },
+  { href: '#performance', label: 'Kinerja' },
+  { href: '#portfolio', label: 'Portofolio' },
+  { href: '#team', label: 'Tim' },
+  { href: '#case-studies', label: 'Studi Kasus' },
+  { href: '#contact', label: 'Kontak' },
 ];
 
 export function Header() {
@@ -40,7 +41,7 @@ export function Header() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle navigation menu</span>
+                <span className="sr-only">Buka menu navigasi</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">

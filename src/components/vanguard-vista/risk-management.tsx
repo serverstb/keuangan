@@ -5,35 +5,35 @@ export function RiskManagement() {
     <section id="risk-management" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Risk Management</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Manajemen Risiko</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            Our commitment to protecting and growing your capital.
+            Komitmen kami untuk melindungi dan menumbuhkan modal Anda.
           </p>
         </div>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible defaultValue="item-1" className="w-full space-y-2">
             <AccordionItem value="item-1" className="border rounded-lg bg-card px-4">
-              <AccordionTrigger className="font-headline text-lg hover:no-underline">Comprehensive Due Diligence</AccordionTrigger>
+              <AccordionTrigger className="font-headline text-lg hover:no-underline">Uji Tuntas Komprehensif</AccordionTrigger>
               <AccordionContent className="text-foreground/80">
-                Every investment opportunity undergoes a rigorous due diligence process. We analyze market trends, competitive landscapes, financial health, and leadership quality to ensure alignment with our strict investment criteria.
+                Setiap peluang investasi menjalani proses uji tuntas yang ketat. Kami menganalisis tren pasar, lanskap kompetitif, kesehatan keuangan, dan kualitas kepemimpinan untuk memastikan keselarasan dengan kriteria investasi kami yang ketat.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" className="border rounded-lg bg-card px-4">
-              <AccordionTrigger className="font-headline text-lg hover:no-underline">Portfolio Diversification</AccordionTrigger>
+              <AccordionTrigger className="font-headline text-lg hover:no-underline">Diversifikasi Portofolio</AccordionTrigger>
               <AccordionContent className="text-foreground/80">
-                We mitigate risk by constructing diversified portfolios across various asset classes, industries, and geographic regions. This strategy helps to cushion against market volatility and provides more stable returns over time.
+                Kami memitigasi risiko dengan membangun portofolio yang terdiversifikasi di berbagai kelas aset, industri, dan wilayah geografis. Strategi ini membantu meredam volatilitas pasar dan memberikan imbal hasil yang lebih stabil dari waktu ke waktu.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3" className="border rounded-lg bg-card px-4">
-              <AccordionTrigger className="font-headline text-lg hover:no-underline">Continuous Monitoring</AccordionTrigger>
+              <AccordionTrigger className="font-headline text-lg hover:no-underline">Pemantauan Berkelanjutan</AccordionTrigger>
               <AccordionContent className="text-foreground/80">
-                Our commitment doesn't end after an investment is made. We continuously monitor our portfolio companies and market conditions, ready to take decisive action to protect our clients' capital and seize new opportunities.
+                Komitmen kami tidak berakhir setelah investasi dilakukan. Kami terus memantau perusahaan portofolio kami dan kondisi pasar, siap mengambil tindakan tegas untuk melindungi modal klien kami dan memanfaatkan peluang baru.
               </AccordionContent>
             </AccordionItem>
              <AccordionItem value="item-4" className="border rounded-lg bg-card px-4">
-              <AccordionTrigger className="font-headline text-lg hover:no-underline">Regulatory Compliance</AccordionTrigger>
+              <AccordionTrigger className="font-headline text-lg hover:no-underline">Kepatuhan Regulasi</AccordionTrigger>
               <AccordionContent className="text-foreground/80">
-                Vanguard Vista operates with the highest ethical standards and adheres strictly to all regulatory requirements. Our robust compliance framework ensures transparency and protects our clients' interests.
+                Vanguard Vista beroperasi dengan standar etika tertinggi dan secara ketat mematuhi semua persyaratan peraturan. Kerangka kerja kepatuhan kami yang kuat memastikan transparansi dan melindungi kepentingan klien kami.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

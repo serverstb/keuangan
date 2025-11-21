@@ -4,23 +4,23 @@ import { Target, TrendingUp, Scale, ShieldCheck } from 'lucide-react';
 const strategies = [
   {
     icon: <TrendingUp className="h-8 w-8 text-primary" />,
-    title: 'Growth Equity',
-    description: 'We invest in high-growth companies with strong market positions and potential for significant expansion.'
+    title: 'Ekuitas Pertumbuhan',
+    description: 'Kami berinvestasi di perusahaan dengan pertumbuhan tinggi, posisi pasar yang kuat, dan potensi ekspansi signifikan.'
   },
   {
     icon: <Target className="h-8 w-8 text-primary" />,
-    title: 'Value Investing',
-    description: 'Our team identifies undervalued assets with solid fundamentals, aiming for long-term capital appreciation.'
+    title: 'Investasi Nilai',
+    description: 'Tim kami mengidentifikasi aset yang dinilai terlalu rendah dengan fundamental yang solid, bertujuan untuk apresiasi modal jangka panjang.'
   },
   {
     icon: <Scale className="h-8 w-8 text-primary" />,
-    title: 'Balanced Portfolio',
-    description: 'A diversified approach across asset classes to balance risk and return for stable, consistent growth.'
+    title: 'Portofolio Seimbang',
+    description: 'Pendekatan terdiversifikasi di berbagai kelas aset untuk menyeimbangkan risiko dan imbal hasil untuk pertumbuhan yang stabil dan konsisten.'
   },
   {
     icon: <ShieldCheck className="h-8 w-8 text-primary" />,
-    title: 'Venture Capital',
-    description: 'We partner with innovative startups and early-stage ventures that are poised to disrupt their industries.'
+    title: 'Modal Ventura',
+    description: 'Kami bermitra dengan startup inovatif dan usaha tahap awal yang siap mendisrupsi industri mereka.'
   }
 ]
 
@@ -29,9 +29,9 @@ export function InvestmentStrategies() {
     <section id="strategies" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Our Investment Strategies</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Strategi Investasi Kami</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
-            A disciplined approach to wealth creation and preservation.
+            Pendekatan disiplin untuk penciptaan dan pelestarian kekayaan.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
