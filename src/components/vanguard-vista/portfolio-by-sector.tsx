@@ -12,6 +12,28 @@ const chartData = [
   { sector: "Lainnya", value: 5, fill: "hsl(340, 80%, 60%)" },
 ];
 
+const chartConfig = {
+  value: {
+    label: "Value",
+  },
+  Teknologi: {
+    label: "Teknologi",
+  },
+  Keuangan: {
+    label: "Keuangan",
+  },
+  Kesehatan: {
+    label: "Kesehatan",
+  },
+  Industri: {
+    label: "Industri",
+  },
+  Lainnya: {
+    label: "Lainnya",
+  },
+};
+
+
 const renderLegend = (props: any) => {
   const { payload } = props;
 
@@ -46,7 +68,7 @@ export function PortfolioBySector() {
             <CardDescription className='text-white/80'>Alokasi dalam persentase (%) dari total aset yang dikelola</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="w-full h-[400px] flex items-center justify-center">
+            <ChartContainer config={chartConfig} className="mx-auto aspect-square h-[400px]">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <ChartTooltip
@@ -71,7 +93,7 @@ export function PortfolioBySector() {
                   <Legend layout="vertical" verticalAlign="middle" align="right" content={renderLegend} />
                 </PieChart>
               </ResponsiveContainer>
-            </div>
+            </ChartContainer>
           </CardContent>
         </Card>
       </div>
