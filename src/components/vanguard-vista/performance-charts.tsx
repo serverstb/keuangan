@@ -5,12 +5,12 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const chartData = [
-  { year: "2019", performance: 8.5, fill: "hsl(var(--chart-1))" },
-  { year: "2020", performance: 12.3, fill: "hsl(var(--chart-2))" },
-  { year: "2021", performance: 15.1, fill: "hsl(var(--chart-3))" },
-  { year: "2022", performance: 10.2, fill: "hsl(var(--chart-4))" },
-  { year: "2023", performance: 18.7, fill: "hsl(var(--chart-5))" },
-  { year: "2024", performance: 22.4, fill: "hsl(var(--chart-1))" },
+  { year: "2019", performance: 8.5, fill: "hsl(210, 80%, 55%)" },
+  { year: "2020", performance: 12.3, fill: "hsl(150, 75%, 45%)" },
+  { year: "2021", performance: 15.1, fill: "hsl(45, 90%, 50%)" },
+  { year: "2022", performance: 10.2, fill: "hsl(25, 85%, 55%)" },
+  { year: "2023", performance: 18.7, fill: "hsl(340, 80%, 60%)" },
+  { year: "2024", performance: 22.4, fill: "hsl(180, 70%, 40%)" },
 ];
 
 const chartConfig = {
