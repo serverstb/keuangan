@@ -1,6 +1,6 @@
 "use client";
 
-import { Pie, PieChart, ResponsiveContainer, Cell, Legend } from 'recharts';
+import { Pie, PieChart, ResponsiveContainer, Cell } from 'recharts';
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
@@ -40,59 +40,63 @@ const chartConfig = {
 
 export function PortfolioBySector() {
   return (
-    <section id="portfolio" className="py-16 md:py-24" style={{ backgroundColor: '#21004f' }}>
+    <section id="portfolio" className="py-16 md:py-24 bg-primary/10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-white">Portofolio Berdasarkan Sektor</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-white/80">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Portofolio Berdasarkan Sektor</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
             Alokasi aset kami yang terdiversifikasi di berbagai sektor utama.
           </p>
         </div>
-        <Card className="bg-white/5 border-white/10">
+        <Card className="bg-background/50 border-border/10 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-white">Distribusi Portofolio Saat Ini</CardTitle>
-            <CardDescription className="text-white/80">Alokasi dalam persentase (%) dari total aset yang dikelola</CardDescription>
+            <CardTitle className="text-foreground">Distribusi Portofolio Saat Ini</CardTitle>
+            <CardDescription className="text-foreground/80">Alokasi dalam persentase (%) dari total aset yang dikelola</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig} className="mx-auto aspect-square h-[400px]">
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <ChartTooltip
-                    cursor={false}
-                    content={<ChartTooltipContent hideLabel className="bg-background/80 backdrop-blur-sm" />}
-                  />
-                  <Pie
-                    data={chartData}
-                    dataKey="value"
-                    nameKey="sector"
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={100}
-                    outerRadius={150}
-                    strokeWidth={5}
-                    stroke="var(--background)"
-                  >
-                     {chartData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.fill} />
-                    ))}
-                  </Pie>
-                  <Legend
-                    content={({ payload }) => {
-                      return (
-                        <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 text-sm text-white/80">
-                          {payload?.map((entry, index) => (
-                            <li key={`item-${index}`} className="flex items-center gap-2">
-                              <span className="h-3 w-3 rounded-full" style={{ backgroundColor: entry.color }} />
-                              <span>{entry.value}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      )
-                    }}
-                  />
-                </PieChart>
-              </ResponsiveContainer>
+              <PieChart>
+                <ChartTooltip
+                  cursor={false}
+                  content={<ChartTooltipContent hideLabel className="bg-background/80 backdrop-blur-sm" />}
+                />
+                <Pie
+                  data={chartData}
+                  dataKey="value"
+                  nameKey="sector"
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={100}
+                  outerRadius={150}
+                  strokeWidth={5}
+                  stroke="hsl(var(--background))"
+                >
+                   {chartData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={entry.fill} />
+                  ))}
+                </Pie>
+                <text
+                  x="50%"
+                  y="50%"
+                  textAnchor="middle"
+                  dominantBaseline="middle"
+                  className="fill-foreground text-2xl font-bold font-headline"
+                >
+                  Aset
+                </text>
+              </PieChart>
             </ChartContainer>
+             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4 text-sm text-foreground/80">
+                {chartData.map((entry) => (
+                    <div key={entry.sector} className="flex items-center gap-2">
+                    <span
+                        className="h-3 w-3 rounded-full"
+                        style={{ backgroundColor: entry.fill }}
+                    />
+                    <span>{entry.sector}</span>
+                    </div>
+                ))}
+            </div>
           </CardContent>
         </Card>
       </div>
