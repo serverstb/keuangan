@@ -1,8 +1,11 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Linkedin, Twitter } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Image from 'next/image';
 
 const teamMembers = [
   {
@@ -38,18 +41,29 @@ const teamMembers = [
 ];
 
 export function Team() {
+  const teamBgImage = PlaceHolderImages.find(p => p.id === 'team-background');
   return (
-    <section id="team" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="team" className="relative py-16 md:py-24 text-white">
+      {teamBgImage && (
+        <Image
+          src={teamBgImage.imageUrl}
+          alt={teamBgImage.description}
+          fill
+          className="object-cover"
+          data-ai-hint={teamBgImage.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-primary/90" />
+      <div className="container relative mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Tim Ahli Kami</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold">Tim Ahli Kami</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-white/80">
             Kenali para pemikir di balik kesuksesan kami.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="text-center flex flex-col items-center pt-8 pb-6 hover:shadow-lg transition-shadow rounded-lg shadow-md">
+            <Card key={index} className="text-center flex flex-col items-center pt-8 pb-6 bg-background/80 text-foreground backdrop-blur-sm hover:shadow-xl transition-shadow rounded-lg shadow-lg">
               <CardHeader className="items-center p-0">
                 <Avatar className="h-24 w-24 mb-4">
                   <AvatarImage src={member.image.imageUrl} alt={member.image.description} data-ai-hint={member.image.imageHint} />

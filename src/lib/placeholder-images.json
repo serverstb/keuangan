@@ -83,6 +83,12 @@
       "description": "Seseorang sedang mengetik di laptop di meja",
       "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYXB0b3AlMjBkZXNrfGVufDB8fHx8MTc2Mzc2Nzk3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "laptop desk"
+    },
+    {
+      "id": "team-background",
+      "description": "Tim bisnis yang beragam bekerja sama di kantor modern",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXNpbmVzcyUyMHRlYW18ZW58MHx8fHwxNzYzNzk2ODg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business team"
     }
   ]
 }
