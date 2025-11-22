@@ -7,7 +7,6 @@ import { InvestmentStrategies } from '@/components/vanguard-vista/investment-str
 import { PerformanceCharts } from '@/components/vanguard-vista/performance-charts';
 import { Team } from '@/components/vanguard-vista/team';
 import { CaseStudies } from '@/components/vanguard-vista/case-studies';
-import { RiskManagement } from '@/components/vanguard-vista/risk-management';
 import { Contact } from '@/components/vanguard-vista/contact';
 import { Footer } from '@/components/vanguard-vista/footer';
 import { PortfolioBySector } from '@/components/vanguard-vista/portfolio-by-sector';
@@ -27,7 +26,6 @@ const VanguardVistaPage: FC<VanguardVistaPageProps> = ({ introduction }) => {
         <PortfolioBySector />
         <Team />
         <CaseStudies />
-        <RiskManagement />
         <Contact />
       </main>
       <Footer />
