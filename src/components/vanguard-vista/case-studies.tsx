@@ -24,6 +24,18 @@ const caseStudies = [
     description: 'Membiayai pembangkit listrik tenaga surya skala besar, berkontribusi pada tujuan energi bersih dan memberikan pengembalian jangka panjang yang stabil.',
     roi: '15% IRR',
     image: PlaceHolderImages.find(p => p.id === 'case-study-3')!,
+  },
+  {
+    title: 'Inovasi Agrikultur',
+    description: 'Mendanai pertanian vertikal perkotaan yang canggih, meningkatkan keamanan pangan lokal dan mengurangi jejak karbon.',
+    roi: 'Pertumbuhan 25% YOY',
+    image: PlaceHolderImages.find(p => p.id === 'case-study-4')!,
+  },
+  {
+    title: 'Terobosan Bioteknologi',
+    description: 'Investasi pada penelitian terapi gen yang inovatif, yang mengarah pada penemuan medis yang signifikan dan keuntungan finansial yang besar.',
+    roi: 'Paten Bernilai Tinggi',
+    image: PlaceHolderImages.find(p => p.id === 'case-study-5')!,
   }
 ];
 

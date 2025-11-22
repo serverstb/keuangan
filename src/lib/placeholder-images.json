@@ -35,6 +35,18 @@
       "description": "Gambar untuk studi kasus proyek energi terbarukan",
       "imageUrl": "https://images.unsplash.com/photo-1503427073713-8e991db6befe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3aW5kJTIwdHVyYmluZXN8ZW58MHx8fHwxNzYzNzIzMzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "wind turbines"
+    },
+    {
+      "id": "case-study-4",
+      "description": "Gambar untuk studi kasus inovasi agrikultur",
+      "imageUrl": "https://images.unsplash.com/photo-1597916829826-02e5bb4a54e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhZ3JpY3VsdHVyZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzYzNzY1Njg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "agriculture technology"
+    },
+    {
+      "id": "case-study-5",
+      "description": "Gambar untuk studi kasus terobosan bioteknologi",
+      "imageUrl": "https://images.unsplash.com/photo-1668511238530-ab0d1bc3037c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiaW90ZWNobm9sb2d5JTIwbGFifGVufDB8fHx8MTc2MzY5MDgzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "biotechnology lab"
     }
   ]
 }
