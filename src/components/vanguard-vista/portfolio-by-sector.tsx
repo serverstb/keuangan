@@ -48,8 +48,8 @@ export function PortfolioBySector() {
             Alokasi aset kami yang terdiversifikasi di berbagai sektor utama.
           </p>
         </div>
-        <Card className="bg-card">
-          <CardHeader>
+        <Card className="bg-transparent border-none shadow-none">
+          <CardHeader className="text-center">
             <CardTitle>Distribusi Portofolio Saat Ini</CardTitle>
             <CardDescription>Alokasi dalam persentase (%) dari total aset yang dikelola</CardDescription>
           </CardHeader>
