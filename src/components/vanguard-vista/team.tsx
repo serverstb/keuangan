@@ -53,7 +53,7 @@ export function Team() {
           data-ai-hint={teamBgImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-primary/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-primary/80" />
       <div className="container relative mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Tim Ahli Kami</h2>
