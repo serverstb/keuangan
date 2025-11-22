@@ -1,22 +1,21 @@
 "use client";
 
-import { Bar, BarChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Cell } from 'recharts';
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const chartData = [
-  { year: "2019", performance: 8.5 },
-  { year: "2020", performance: 12.3 },
-  { year: "2021", performance: 15.1 },
-  { year: "2022", performance: 10.2 },
-  { year: "2023", performance: 18.7 },
-  { year: "2024", performance: 22.4 },
+  { year: "2019", performance: 8.5, fill: "hsl(var(--chart-1))" },
+  { year: "2020", performance: 12.3, fill: "hsl(var(--chart-2))" },
+  { year: "2021", performance: 15.1, fill: "hsl(var(--chart-3))" },
+  { year: "2022", performance: 10.2, fill: "hsl(var(--chart-4))" },
+  { year: "2023", performance: 18.7, fill: "hsl(var(--chart-5))" },
+  { year: "2024", performance: 22.4, fill: "hsl(var(--chart-1))" },
 ];
 
 const chartConfig = {
   performance: {
     label: "Kinerja",
-    color: "hsl(var(--accent))",
   },
 };
 
@@ -58,7 +57,11 @@ export function PerformanceCharts() {
                     cursor={false}
                     content={<ChartTooltipContent indicator="dot" labelClassName="font-bold" className="bg-card" />}
                   />
-                  <Bar dataKey="performance" fill="var(--color-performance)" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="performance" radius={[4, 4, 0, 0]}>
+                    {chartData.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={entry.fill} />
+                    ))}
+                  </Bar>
                 </BarChart>
               </ResponsiveContainer>
             </ChartContainer>
