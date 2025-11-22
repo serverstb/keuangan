@@ -40,18 +40,18 @@ const chartConfig = {
 
 export function PortfolioBySector() {
   return (
-    <section id="portfolio" className="py-16 md:py-24 bg-background">
+    <section id="portfolio" className="py-16 md:py-24" style={{ backgroundColor: '#21004f' }}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Portofolio Berdasarkan Sektor</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-white">Portofolio Berdasarkan Sektor</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-white/80">
             Alokasi aset kami yang terdiversifikasi di berbagai sektor utama.
           </p>
         </div>
         <Card className="bg-transparent border-none shadow-none">
           <CardHeader className="text-center">
-            <CardTitle>Distribusi Portofolio Saat Ini</CardTitle>
-            <CardDescription>Alokasi dalam persentase (%) dari total aset yang dikelola</CardDescription>
+            <CardTitle className='text-white'>Distribusi Portofolio Saat Ini</CardTitle>
+            <CardDescription className='text-white/80'>Alokasi dalam persentase (%) dari total aset yang dikelola</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig} className="mx-auto aspect-square h-[400px]">
@@ -59,7 +59,7 @@ export function PortfolioBySector() {
                 <PieChart>
                   <ChartTooltip
                     cursor={false}
-                    content={<ChartTooltipContent hideLabel className="bg-card" />}
+                    content={<ChartTooltipContent hideLabel className="bg-background/80 backdrop-blur-sm" />}
                   />
                   <Pie
                     data={chartData}
@@ -67,13 +67,14 @@ export function PortfolioBySector() {
                     nameKey="sector"
                     innerRadius={100}
                     strokeWidth={5}
+                    stroke="var(--background)"
                   >
                      {chartData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.fill} />
                     ))}
                   </Pie>
                   <ChartLegend
-                    content={<ChartLegendContent nameKey="sector" />}
+                    content={<ChartLegendContent nameKey="sector" className='text-white'/>}
                     className="-translate-y-[10px] flex-wrap gap-2 [&>*]:basis-1/4 [&>*]:justify-center"
                   />
                 </PieChart>
