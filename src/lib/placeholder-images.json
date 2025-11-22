@@ -7,6 +7,36 @@
       "imageHint": "modern office"
     },
     {
+      "id": "hero-slider-1",
+      "description": "Pemandangan kota modern saat matahari terbenam",
+      "imageUrl": "https://images.unsplash.com/photo-1612409578638-b890d0fa9364?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaXR5JTIwc3Vuc2V0fGVufDB8fHx8MTc2MzczMDEyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city sunset"
+    },
+    {
+      "id": "hero-slider-2",
+      "description": "Rapat bisnis di kantor modern",
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYzNjcyNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "hero-slider-3",
+      "description": "Grafik pasar saham di layar digital",
+      "imageUrl": "https://images.unsplash.com/photo-1648275913341-7973ae7bc9b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdG9jayUyMG1hcmtldHxlbnwwfHx8fDE3NjM3NTY1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stock market"
+    },
+    {
+      "id": "hero-slider-4",
+      "description": "Visualisasi data keuangan abstrak",
+      "imageUrl": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZmluYW5jaWFsJTIwZGF0YXxlbnwwfHx8fDE3NjM3MDM0MTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial data"
+    },
+    {
+      "id": "hero-slider-5",
+      "description": "Jaringan global dan koneksi",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2MzczNzgyOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "global network"
+    },
+    {
       "id": "team-member-1",
       "description": "Foto John Doe",
       "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM3MDc5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -57,7 +87,7 @@
     {
       "id": "strategy-growth",
       "description": "Grafik saham yang menunjukkan pertumbuhan ke atas",
-      "imageUrl": "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdG9jayUyMGNoYXJ0fGVufDB8fHx8MTc2Mzc0MDU1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628763228263-d9ebb07bd0d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdG9jayUyMGNoYXJ0fGVufDB8fHx8MTc2Mzc0MDU1NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "stock chart"
     },
     {
@@ -69,19 +99,19 @@
     {
       "id": "strategy-balanced",
       "description": "Diagram lingkaran yang menunjukkan portofolio yang terdiversifikasi",
-      "imageUrl": "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaWUlMjBjaGFydHxlbnwwfHx8fDE3NjM3NzQwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwaWUlMjBjaGFydHxlbnwwfHx8fDE3NjM3NzQwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "pie chart"
     },
     {
       "id": "strategy-venture",
       "description": "Bola lampu yang melambangkan ide inovatif",
-      "imageUrl": "https://images.unsplash.com/photo-1552862750-746b8f6f7f25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsaWdodCUyMGJ1bGJ8ZW58MHx8fHwxNzYzNzc0MDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1529704193007-e8c78f0f46f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsaWdodCUyMGJ1bGJ8ZW58MHx8fHwxNzYzNzc0MDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "light bulb"
     },
     {
       "id": "contact-us",
       "description": "Seseorang sedang mengetik di laptop di meja",
-      "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYXB0b3AlMjBkZXNrfGVufDB8fHx8MTc2Mzc2Nzk3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYXB0b3AlMjBkZXNrfGVufDB8fHx8MTc2Mzc2Nzk3MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "laptop desk"
     }
   ]
