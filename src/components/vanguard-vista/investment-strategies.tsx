@@ -37,7 +37,7 @@ export function InvestmentStrategies() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {strategies.map((strategy, index) => (
-            <Card key={index} className="flex flex-col text-center items-center bg-white/10 border-white/20 hover:shadow-lg transition-shadow overflow-hidden">
+            <Card key={index} className="flex flex-col text-center items-center bg-white/10 border-white/20 hover:shadow-lg transition-shadow overflow-hidden rounded-lg shadow-md">
                <div className="relative w-full h-40">
                 <Image
                   src={strategy.image.imageUrl}

@@ -49,7 +49,7 @@ export function Team() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="text-center flex flex-col items-center pt-8 pb-6 hover:shadow-lg transition-shadow">
+            <Card key={index} className="text-center flex flex-col items-center pt-8 pb-6 hover:shadow-lg transition-shadow rounded-lg shadow-md">
               <CardHeader className="items-center p-0">
                 <Avatar className="h-24 w-24 mb-4">
                   <AvatarImage src={member.image.imageUrl} alt={member.image.description} data-ai-hint={member.image.imageHint} />

@@ -14,7 +14,7 @@ export function Contact() {
               Punya pertanyaan atau siap memulai perjalanan investasi Anda? Tim kami siap membantu. Hubungi kami, dan kami akan segera menghubungi Anda kembali.
             </p>
             {contactImage && (
-               <div className="relative w-full h-64 rounded-lg overflow-hidden mt-6">
+               <div className="relative w-full h-64 rounded-lg overflow-hidden mt-6 shadow-md">
                 <Image
                   src={contactImage.imageUrl}
                   alt={contactImage.description}

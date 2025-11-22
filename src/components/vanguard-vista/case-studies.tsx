@@ -54,7 +54,7 @@ export function CaseStudies() {
             {caseStudies.map((study, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="overflow-hidden h-full flex flex-col transition-shadow hover:shadow-lg">
+                  <Card className="overflow-hidden h-full flex flex-col transition-shadow hover:shadow-lg rounded-lg shadow-md">
                     <Image
                       src={study.image.imageUrl}
                       alt={study.image.description}

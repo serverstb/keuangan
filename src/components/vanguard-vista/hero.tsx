@@ -48,7 +48,7 @@ export function Hero({ introduction }: { introduction: string }) {
            </p>
         </div>
         <div className="mt-8">
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="shadow-md">
             <a href="#contact">Hubungi Kami</a>
           </Button>
         </div>
