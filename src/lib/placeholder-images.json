@@ -7,36 +7,6 @@
       "imageHint": "modern office"
     },
     {
-      "id": "hero-slider-1",
-      "description": "Pemandangan kota modern saat matahari terbenam",
-      "imageUrl": "https://images.unsplash.com/photo-1550850839-8dc894ed385a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjaXR5JTIwc3Vuc2V0fGVufDB8fHx8MTc2MzczMDEyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "city sunset"
-    },
-    {
-      "id": "hero-slider-2",
-      "description": "Rapat bisnis di kantor modern",
-      "imageUrl": "https://images.unsplash.com/photo-1688380692117-63178554d76d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYzNjcyNjk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business meeting"
-    },
-    {
-      "id": "hero-slider-3",
-      "description": "Grafik pasar saham di layar digital",
-      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMG1hcmtldHxlbnwwfHx8fDE3NjM3NTY1MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "stock market"
-    },
-    {
-      "id": "hero-slider-4",
-      "description": "Visualisasi data keuangan abstrak",
-      "imageUrl": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNpYWwlMjBkYXRhfGVufDB8fHx8MTc2MzcwMzQxOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "financial data"
-    },
-    {
-      "id": "hero-slider-5",
-      "description": "Jaringan global dan koneksi",
-      "imageUrl": "https://images.unsplash.com/photo-1684610527413-66eec7828690?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnbG9iYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2MzczNzgyOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "global network"
-    },
-    {
       "id": "team-member-1",
       "description": "Foto John Doe",
       "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM3MDc5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
