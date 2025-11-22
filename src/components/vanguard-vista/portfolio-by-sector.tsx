@@ -1,7 +1,7 @@
 "use client";
 
-import { Pie, PieChart, ResponsiveContainer, Cell } from 'recharts';
-import { ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLegendContent } from '@/components/ui/chart';
+import { Pie, PieChart, ResponsiveContainer, Cell, Legend } from 'recharts';
+import { ChartContainer, ChartTooltip, ChartTooltipContent } from '@/components/ui/chart';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const chartData = [
@@ -12,31 +12,23 @@ const chartData = [
   { sector: "Lainnya", value: 5, fill: "hsl(340, 80%, 60%)" },
 ];
 
-const chartConfig = {
-  value: {
-    label: "Nilai",
-  },
-  Teknologi: {
-    label: "Teknologi",
-    color: "hsl(210, 80%, 55%)",
-  },
-  Keuangan: {
-    label: "Keuangan",
-    color: "hsl(150, 75%, 45%)",
-  },
-  Kesehatan: {
-    label: "Kesehatan",
-    color: "hsl(45, 90%, 50%)",
-  },
-  Industri: {
-    label: "Industri",
-    color: "hsl(25, 85%, 55%)",
-  },
-  Lainnya: {
-    label: "Lainnya",
-    color: "hsl(340, 80%, 60%)",
-  },
-};
+const renderLegend = (props: any) => {
+  const { payload } = props;
+
+  return (
+    <ul className="flex flex-col space-y-2">
+      {
+        payload.map((entry: any, index: number) => (
+          <li key={`item-${index}`} className="flex items-center space-x-2">
+            <span className="w-3 h-3 rounded-full" style={{ backgroundColor: entry.color }} />
+            <span className='text-sm text-white/80'>{`${entry.payload.sector}: ${entry.payload.value}%`}</span>
+          </li>
+        ))
+      }
+    </ul>
+  );
+}
+
 
 export function PortfolioBySector() {
   return (
@@ -54,7 +46,7 @@ export function PortfolioBySector() {
             <CardDescription className='text-white/80'>Alokasi dalam persentase (%) dari total aset yang dikelola</CardDescription>
           </CardHeader>
           <CardContent>
-            <ChartContainer config={chartConfig} className="mx-auto aspect-square h-[400px]">
+            <div className="w-full h-[400px] flex items-center justify-center">
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <ChartTooltip
@@ -65,7 +57,10 @@ export function PortfolioBySector() {
                     data={chartData}
                     dataKey="value"
                     nameKey="sector"
+                    cx="50%"
+                    cy="50%"
                     innerRadius={100}
+                    outerRadius={150}
                     strokeWidth={5}
                     stroke="var(--background)"
                   >
@@ -73,13 +68,10 @@ export function PortfolioBySector() {
                       <Cell key={`cell-${index}`} fill={entry.fill} />
                     ))}
                   </Pie>
-                  <ChartLegend
-                    content={<ChartLegendContent nameKey="sector" className='text-white'/>}
-                    className="-translate-y-[10px] flex-wrap gap-2 [&>*]:basis-1/4 [&>*]:justify-center"
-                  />
+                  <Legend layout="vertical" verticalAlign="middle" align="right" content={renderLegend} />
                 </PieChart>
               </ResponsiveContainer>
-            </ChartContainer>
+            </div>
           </CardContent>
         </Card>
       </div>
