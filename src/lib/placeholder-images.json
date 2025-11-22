@@ -1,6 +1,12 @@
 {
   "placeholderImages": [
     {
+      "id": "hero-background",
+      "description": "Latar belakang kantor modern dengan pemandangan kota",
+      "imageUrl": "https://images.unsplash.com/photo-1657978837950-03646a7c7b9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzYzNjkxNzMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern office"
+    },
+    {
       "id": "team-member-1",
       "description": "Foto John Doe",
       "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM3MDc5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -47,6 +53,36 @@
       "description": "Gambar untuk studi kasus terobosan bioteknologi",
       "imageUrl": "https://images.unsplash.com/photo-1668511238530-ab0d1bc3037c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiaW90ZWNobm9sb2d5JTIwbGFifGVufDB8fHx8MTc2MzY5MDgzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "biotechnology lab"
+    },
+    {
+      "id": "strategy-growth",
+      "description": "Grafik saham yang menunjukkan pertumbuhan ke atas",
+      "imageUrl": "https://images.unsplash.com/photo-1645226880663-81561dcab0ae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdG9jayUyMGNoYXJ0fGVufDB8fHx8MTc2Mzc0MDU1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stock chart"
+    },
+    {
+      "id": "strategy-value",
+      "description": "Timbangan yang menyeimbangkan risiko dan imbalan",
+      "imageUrl": "https://images.unsplash.com/photo-1721352794721-9a2f91f8dcbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY2FsZXMlMjBqdXN0aWNlfGVufDB8fHx8MTc2MzcwNzYwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scales justice"
+    },
+    {
+      "id": "strategy-balanced",
+      "description": "Diagram lingkaran yang menunjukkan portofolio yang terdiversifikasi",
+      "imageUrl": "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaWUlMjBjaGFydHxlbnwwfHx8fDE3NjM3NzQwOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pie chart"
+    },
+    {
+      "id": "strategy-venture",
+      "description": "Bola lampu yang melambangkan ide inovatif",
+      "imageUrl": "https://images.unsplash.com/photo-1552862750-746b8f6f7f25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsaWdodCUyMGJ1bGJ8ZW58MHx8fHwxNzYzNzc0MDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "light bulb"
+    },
+    {
+      "id": "contact-us",
+      "description": "Seseorang sedang mengetik di laptop di meja",
+      "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsYXB0b3AlMjBkZXNrfGVufDB8fHx8MTc2Mzc2Nzk3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laptop desk"
     }
   ]
 }
