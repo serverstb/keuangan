@@ -5,11 +5,11 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent, ChartLegend, ChartLe
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const chartData = [
-  { sector: "Teknologi", value: 45, fill: "hsl(var(--chart-1))" },
-  { sector: "Keuangan", value: 25, fill: "hsl(var(--chart-2))" },
-  { sector: "Kesehatan", value: 15, fill: "hsl(var(--chart-3))" },
-  { sector: "Industri", value: 10, fill: "hsl(var(--chart-4))" },
-  { sector: "Lainnya", value: 5, fill: "hsl(var(--chart-5))" },
+  { sector: "Teknologi", value: 45, fill: "hsl(210, 80%, 55%)" },
+  { sector: "Keuangan", value: 25, fill: "hsl(150, 75%, 45%)" },
+  { sector: "Kesehatan", value: 15, fill: "hsl(45, 90%, 50%)" },
+  { sector: "Industri", value: 10, fill: "hsl(25, 85%, 55%)" },
+  { sector: "Lainnya", value: 5, fill: "hsl(340, 80%, 60%)" },
 ];
 
 const chartConfig = {
@@ -18,23 +18,23 @@ const chartConfig = {
   },
   Teknologi: {
     label: "Teknologi",
-    color: "hsl(var(--chart-1))",
+    color: "hsl(210, 80%, 55%)",
   },
   Keuangan: {
     label: "Keuangan",
-    color: "hsl(var(--chart-2))",
+    color: "hsl(150, 75%, 45%)",
   },
   Kesehatan: {
     label: "Kesehatan",
-    color: "hsl(var(--chart-3))",
+    color: "hsl(45, 90%, 50%)",
   },
   Industri: {
     label: "Industri",
-    color: "hsl(var(--chart-4))",
+    color: "hsl(25, 85%, 55%)",
   },
   Lainnya: {
     label: "Lainnya",
-    color: "hsl(var(--chart-5))",
+    color: "hsl(340, 80%, 60%)",
   },
 };
 
