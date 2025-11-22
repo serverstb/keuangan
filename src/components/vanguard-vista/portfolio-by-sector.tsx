@@ -43,7 +43,7 @@ export function PortfolioBySector() {
     <section id="portfolio" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Portofolio Berdasarkan Sektor</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Portofolio Berdasarkan Sektor</h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
             Alokasi aset kami yang terdiversifikasi di berbagai sektor utama.
           </p>

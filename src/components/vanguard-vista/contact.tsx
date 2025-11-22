@@ -6,7 +6,7 @@ export function Contact() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Mari Bangun Masa Depan Anda</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Mari Bangun Masa Depan Anda</h2>
             <p className="text-lg text-foreground/80">
               Punya pertanyaan atau siap memulai perjalanan investasi Anda? Tim kami siap membantu. Hubungi kami, dan kami akan segera menghubungi Anda kembali.
             </p>
