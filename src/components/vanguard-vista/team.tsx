@@ -53,7 +53,7 @@ export function Team() {
           data-ai-hint={teamBgImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/70 to-primary/80" />
+      <div className="absolute inset-0 bg-black/70" />
       <div className="container relative mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold">Tim Ahli Kami</h2>
@@ -63,23 +63,23 @@ export function Team() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card key={index} className="text-center flex flex-col items-center pt-8 pb-6 bg-background/80 text-foreground backdrop-blur-sm hover:shadow-xl transition-shadow rounded-lg shadow-lg">
+            <Card key={index} className="text-center flex flex-col items-center pt-8 pb-6 bg-background/90 text-foreground backdrop-blur-sm hover:shadow-xl transition-shadow rounded-lg shadow-lg border-border/20">
               <CardHeader className="items-center p-0">
-                <Avatar className="h-24 w-24 mb-4">
+                <Avatar className="h-24 w-24 mb-4 border-2 border-border">
                   <AvatarImage src={member.image.imageUrl} alt={member.image.description} data-ai-hint={member.image.imageHint} />
                   <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
                 </Avatar>
                 <CardTitle className="font-headline text-xl">{member.name}</CardTitle>
-                <CardDescription className="text-accent-foreground font-medium bg-accent px-2 py-1 rounded-full">{member.role}</CardDescription>
+                <CardDescription className="text-ring font-medium">{member.role}</CardDescription>
               </CardHeader>
               <CardContent className="p-6">
                 <p className="text-muted-foreground mb-4">{member.bio}</p>
                 <div className="flex justify-center gap-2">
                   <Button variant="ghost" size="icon" asChild>
-                    <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} di LinkedIn`}><Linkedin className="h-5 w-5" /></a>
+                    <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} di LinkedIn`}><Linkedin className="h-5 w-5 text-muted-foreground hover:text-ring" /></a>
                   </Button>
                   <Button variant="ghost" size="icon" asChild>
-                    <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} di Twitter`}><Twitter className="h-5 w-5" /></a>
+                    <a href={member.social.twitter} target="_blank" rel="noopener noreferrer" aria-label={`${member.name} di Twitter`}><Twitter className="h-5 w-5 text-muted-foreground hover:text-ring" /></a>
                   </Button>
                 </div>
               </CardContent>

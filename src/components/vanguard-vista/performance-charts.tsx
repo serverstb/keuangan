@@ -21,15 +21,6 @@ const chartConfig = {
   },
 };
 
-const colors = [
-  "hsl(210, 80%, 55%)",
-  "hsl(150, 75%, 45%)",
-  "hsl(45, 90%, 50%)",
-  "hsl(25, 85%, 55%)",
-  "hsl(340, 80%, 60%)",
-  "hsl(180, 70%, 40%)"
-];
-
 export function PerformanceCharts() {
   const getChange = (index: number) => {
     if (index === 0) return { change: 0, icon: null };
@@ -41,7 +32,7 @@ export function PerformanceCharts() {
   };
   
   return (
-    <section id="performance" className="py-16 md:py-24 bg-background">
+    <section id="performance" className="py-16 md:py-24 bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Kinerja yang Terbukti</h2>
@@ -49,49 +40,51 @@ export function PerformanceCharts() {
             Rekam jejak kami berbicara sendiri. Pertumbuhan konsisten melalui investasi strategis.
           </p>
         </div>
-        <Card className="bg-card">
+        <Card className="bg-card shadow-lg rounded-xl">
           <CardHeader>
             <CardTitle>Laporan Kinerja Portofolio Tahunan</CardTitle>
             <CardDescription>Pertumbuhan investasi dari tahun ke tahun dalam persentase (%)</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              <ChartContainer config={chartConfig} className="h-[400px] w-full">
-                <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={chartData} margin={{ top: 20, right: 20, bottom: 20, left: 0 }}>
-                    <CartesianGrid strokeDasharray="3 3" vertical={false} />
-                    <XAxis
-                      dataKey="year"
-                      tickLine={false}
-                      axisLine={false}
-                      tickMargin={8}
-                      tickFormatter={(value) => value}
-                      stroke="hsl(var(--muted-foreground))"
-                    />
-                    <YAxis
-                      stroke="hsl(var(--muted-foreground))"
-                      tickLine={false}
-                      axisLine={false}
-                      tickMargin={8}
-                      tickFormatter={(value) => `${value}%`}
-                    />
-                    <ChartTooltip
-                      cursor={false}
-                      content={<ChartTooltipContent indicator="dot" labelClassName="font-bold" className="bg-popover text-popover-foreground" />}
-                    />
-                    <Bar dataKey="performance" radius={[4, 4, 0, 0]}>
-                      {chartData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
-                      ))}
-                    </Bar>
-                  </BarChart>
-                </ResponsiveContainer>
-              </ChartContainer>
-              <div className="space-y-4">
-                <div>
-                    <h3 className="text-xl font-headline font-semibold text-foreground mb-2">Ringkasan Analisis</h3>
+            <div className="grid lg:grid-cols-5 gap-8 items-start">
+              <div className="lg:col-span-3">
+                <ChartContainer config={chartConfig} className="h-[400px] w-full">
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart data={chartData} margin={{ top: 20, right: 20, bottom: 20, left: 0 }}>
+                      <CartesianGrid strokeDasharray="3 3" vertical={false} />
+                      <XAxis
+                        dataKey="year"
+                        tickLine={false}
+                        axisLine={false}
+                        tickMargin={8}
+                        tickFormatter={(value) => value}
+                        stroke="hsl(var(--muted-foreground))"
+                      />
+                      <YAxis
+                        stroke="hsl(var(--muted-foreground))"
+                        tickLine={false}
+                        axisLine={false}
+                        tickMargin={8}
+                        tickFormatter={(value) => `${value}%`}
+                      />
+                      <ChartTooltip
+                        cursor={false}
+                        content={<ChartTooltipContent indicator="dot" labelClassName="font-bold" className="bg-popover text-popover-foreground rounded-lg shadow-lg" />}
+                      />
+                      <Bar dataKey="performance" radius={[4, 4, 0, 0]}>
+                        {chartData.map((entry, index) => (
+                           <Cell key={`cell-${index}`} fill={`hsl(var(--chart-${index + 1}))`} />
+                        ))}
+                      </Bar>
+                    </BarChart>
+                  </ResponsiveContainer>
+                </ChartContainer>
+              </div>
+              <div className="lg:col-span-2 space-y-4">
+                <div className="bg-secondary/50 p-4 rounded-lg">
+                    <h3 className="text-lg font-headline font-semibold text-foreground mb-2">Ringkasan Analisis</h3>
                     <p className="text-muted-foreground text-sm">
-                      Portofolio kami menunjukkan tren pertumbuhan yang kuat dan positif, dengan rata-rata imbal hasil tahunan yang mengesankan. Meskipun terjadi sedikit perlambatan pada tahun 2022 akibat volatilitas pasar global, strategi adaptif kami berhasil membalikkan keadaan dengan lonjakan signifikan pada tahun 2023 dan 2024. Hal ini membuktikan ketahanan dan potensi keuntungan jangka panjang dari pendekatan investasi kami.
+                      Portofolio kami menunjukkan tren pertumbuhan yang kuat, membuktikan ketahanan dan potensi keuntungan jangka panjang dari pendekatan investasi kami.
                     </p>
                 </div>
                 <Table>
@@ -110,9 +103,11 @@ export function PerformanceCharts() {
                           <TableCell>{item.year}</TableCell>
                           <TableCell className="text-right font-medium">{item.performance}%</TableCell>
                           <TableCell className="text-right">
-                           <div className="flex items-center justify-end gap-1">
+                           <div className="flex items-center justify-end gap-1 text-sm">
                               {icon}
-                              <span>{change !== 0 ? `${change}%` : '-'}</span>
+                              <span className={change > 0 ? 'text-green-600' : change < 0 ? 'text-red-600' : 'text-muted-foreground'}>
+                                {change !== 0 ? `${change}%` : '-'}
+                              </span>
                             </div>
                           </TableCell>
                         </TableRow>

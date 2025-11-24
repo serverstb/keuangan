@@ -41,11 +41,11 @@ const caseStudies = [
 
 export function CaseStudies() {
   return (
-    <section id="case-studies" className="py-16 md:py-24 bg-card">
+    <section id="case-studies" className="py-16 md:py-24 bg-secondary/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Kisah Sukses</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-foreground/80">
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Mengubah potensi menjadi kinerja.
           </p>
         </div>
@@ -54,7 +54,7 @@ export function CaseStudies() {
             {caseStudies.map((study, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="overflow-hidden h-full flex flex-col transition-shadow hover:shadow-lg rounded-lg shadow-md">
+                  <Card className="overflow-hidden h-full flex flex-col transition-shadow hover:shadow-lg rounded-lg shadow-md bg-card">
                     <Image
                       src={study.image.imageUrl}
                       alt={study.image.description}
@@ -68,7 +68,7 @@ export function CaseStudies() {
                     </CardHeader>
                     <CardContent className="flex-grow flex flex-col justify-between">
                       <p className="text-muted-foreground mb-4">{study.description}</p>
-                      <Badge variant="secondary" className="bg-accent text-accent-foreground w-fit">{study.roi}</Badge>
+                      <Badge variant="secondary">{study.roi}</Badge>
                     </CardContent>
                   </Card>
                 </div>

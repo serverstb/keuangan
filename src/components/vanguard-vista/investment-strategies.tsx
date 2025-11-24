@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
+import { ArrowUpRight } from 'lucide-react';
 
 const strategies = [
   {
@@ -27,31 +28,31 @@ const strategies = [
 
 export function InvestmentStrategies() {
   return (
-    <section id="strategies" className="py-16 md:py-24" style={{ backgroundColor: '#21004f', color: 'white' }}>
+    <section id="strategies" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-white">Strategi Investasi Kami</h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-white/80">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-foreground">Strategi Investasi Kami</h2>
+          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Pendekatan disiplin untuk penciptaan dan pelestarian kekayaan.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {strategies.map((strategy, index) => (
-            <Card key={index} className="flex flex-col text-center items-center bg-white/10 border-white/20 hover:shadow-lg transition-shadow overflow-hidden rounded-lg shadow-md">
-               <div className="relative w-full h-40">
+            <Card key={index} className="flex flex-col text-left items-start bg-card hover:shadow-xl transition-shadow overflow-hidden rounded-lg group">
+               <div className="relative w-full h-40 overflow-hidden">
                 <Image
                   src={strategy.image.imageUrl}
                   alt={strategy.image.description}
                   data-ai-hint={strategy.image.imageHint}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <CardHeader className="p-4">
-                <CardTitle className="font-headline text-xl font-semibold text-white">{strategy.title}</CardTitle>
+              <CardHeader className="p-6 w-full">
+                <CardTitle className="font-headline text-xl font-semibold text-foreground">{strategy.title}</CardTitle>
               </CardHeader>
-              <CardContent className="p-4 pt-0">
-                <p className="text-white/80">{strategy.description}</p>
+              <CardContent className="p-6 pt-0 flex-grow">
+                <p className="text-muted-foreground">{strategy.description}</p>
               </CardContent>
             </Card>
           ))}
